@@ -1,4 +1,4 @@
-nclude "score.h"
+#include "score.h"
 
 int Menu(){
 	int num;

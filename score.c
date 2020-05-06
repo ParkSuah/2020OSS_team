@@ -1,4 +1,4 @@
-nclude "total.h"
+#include "score.h"
 
 int addScore(Score *s){
 	printf("학생의 이름: ");

@@ -8,7 +8,7 @@ int addScore(Score *s){
 	printf("수학점수: ");
 	scanf("%d\n", &s->math);
 	printf("영어점수: ");
-	scanf("%d\n", &s->eng);
+	scanf("%d", &s->eng);
 	printf("==> 추가됨!\n");
 	
 	return 1;

@@ -10,7 +10,6 @@ int addScore(Score *s){
 	printf("영어점수: ");
 	scanf("%d", &s->eng);
 	printf("==> 추가됨!\n");
-	
 	return 1;
 }
 

@@ -6,6 +6,8 @@ int main(void){
 	int count = 0;
 	int curcount = 0;
 	
+	count = loadData(slist);
+	curcount = count;	
 	while(1){
 		choice = scoreMenu();
 		if(choice == 0) break;
@@ -48,6 +50,12 @@ int main(void){
 				else printf("==> 제품삭제 취소");
 			}else{
 				printf("아무런 정보도 입력되지 않았습니다.\n");
+			}
+		}else if(choice == 5){
+			if(count > 0){
+				saveData(slist, curcount);
+			}else{
+				printf("아무런 정보도 입력되지 않았습니다 .\n");
 			}
 		}
 	}

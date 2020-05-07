@@ -1,4 +1,4 @@
-#include "total.h"
+#include "score.h"
 
 void listScore(Score *s, int count){
 	printf("\n등록번호   이름    국어    영어    수학    총점    평균\n");

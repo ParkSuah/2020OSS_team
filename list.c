@@ -1,4 +1,4 @@
-#include "score.h"
+#include "list.h"
 
 void listScore(Score *s, int count){
 	printf("\n등록번호   이름    국어    영어    수학    총점    평균\n");
@@ -18,7 +18,7 @@ int selectDataNo(Score *s, int count){
 	return num;
 }
 
-int ScoreMenu(){
+int scoreMenu(){
     int num;
     printf("====메뉴목록====\n");
     printf("1. 조회\n");
@@ -27,7 +27,7 @@ int ScoreMenu(){
     printf("4. 삭제\n");
     printf("5. 파일저장\n");
     printf("0. 종료\n");
-    pirntf("원하는 메뉴는 ? ");
+    printf("원하는 메뉴는 ? ");
     scanf("%d", &num);
     return num;
 }
@@ -35,7 +35,7 @@ int ScoreMenu(){
 void saveData(Score* s, int count){
 	FILE* fp = fopen("data.txt", "wt");
 	for(int i=0; i<count; i++){
-		if(p[i].kor == -1) continue;
+		if(s[i].kor == -1) continue;
 	fprintf(fp, "%d %d %d %d %.1f %s\n", s[i].kor, s[i].eng, 
 		s[i].math, s[i].sum, s[i].avg, s[i].name);
 	}
@@ -51,9 +51,9 @@ int loadData(Score* s){
 		return 0;
 	}
 	for(;;c++){
-		fscanf(fp, "%d %d %d %d %f ", &s[c].kor, &s[c].eng, &s[c].math, &s[c].avg);
+		fscanf(fp, "%d %d %d %d %f ", &s[c].kor, &s[c].eng, &s[c].math,&s[c].sum, &s[c].avg);
 		fgets(s[c].name, 20, fp);
-		s[c].name[strlen(s[c].name-1] = '\0';
+		s[c].name[strlen(s[c].name)-1] = '\0';
 		if(feof(fp)) break;
 	}
 

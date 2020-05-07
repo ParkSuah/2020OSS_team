@@ -1,4 +1,4 @@
-#include "score.h"
+#include "list.h"
 
 int main(void){
 	Score slist[100];

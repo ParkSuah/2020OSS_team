@@ -2,13 +2,13 @@
 
 int addScore(Score *s){
 	printf("학생의 이름: ");
-	scanf("%s\n", s->name);
+	scanf("%s", s->name);
 	printf("국어점수: ");
-	scanf("%d\n", &s->kor);
+	scanf("%d", &s->kor);
 	printf("수학점수: ");
-	scanf("%d\n", &s->math);
+	scanf("%d", &s->math);
 	printf("영어점수: ");
-	scanf("%d\n", &s->eng);
+	scanf("%d", &s->eng);
 	printf("==> 추가됨!\n");
 	
 	return 1;

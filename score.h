@@ -11,8 +11,6 @@ typedef struct _score{
 
 void readScore(Score s); //하나의 데이터를 읽는 함수
 
-void listScore(Score *s, int count); //전체 리스트를 보여주는 함수
-
 int addData(Score *s); //새로운 식당을 추가하는 함수
 
 int updateData(Score *s, int count); //기존 등록된 식당을 수정하는 함수

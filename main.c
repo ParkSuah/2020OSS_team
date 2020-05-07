@@ -1,19 +1,5 @@
 #include "score.h"
 
-int Menu(){
-	int num;
-	printf("====메뉴목록====\n");
-	printf("1. 조회\n");
-	printf("2. 추가\n");
-	printf("3. 수정\n");	
-	printf("4. 삭제\n");
-	printf("0. 종료\n");
-	printf("원하는 작업: ");
-	scanf("%d", &num);
-	
-	return num;
-}
-
 int main(void){
 	Score slist[100];
 	int choice;
@@ -21,7 +7,7 @@ int main(void){
 	int curcount = 0;
 	
 	while(1){
-		choice = Menu();
+		choice = scoreMenu();
 		if(choice == 0) break;
 		else if(choice == 1){
 			if(count > 0){

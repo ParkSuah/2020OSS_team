@@ -26,6 +26,8 @@ int main(void){
 		else if(choice == 1){
 			if(count > 0){
 				listScore(slist, count);
+			}else{
+				printf("아무런 정보도 입력되지 않았습니다.\n");
 			}
 		}
 		else if(choice == 2){
@@ -39,6 +41,8 @@ int main(void){
 					continue;
 				}
 				updateScore(&slist[select -1]);	
+			}else{
+				printf("아무런 정보도 입력되지 않았습니다.\n");
 			}
 		}
 		else if(choice == 4){
@@ -56,6 +60,8 @@ int main(void){
 					count--;
 				}
 				else printf("==> 제품삭제 취소");
+			}else{
+				printf("아무런 정보도 입력되지 않았습니다.\n");
 			}
 		}
 	}

@@ -1,3 +1,8 @@
+#Execution files
+student_score
+# txt files
+*.txt
+
 # Prerequisites
 *.d
 

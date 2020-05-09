@@ -1,4 +1,5 @@
 #include "score.h"
+#include <string.h>
 
 int scoreMenu();
 void saveData(Score* s, int count);

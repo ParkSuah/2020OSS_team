@@ -57,7 +57,17 @@ int main(void){
 			}else{
 				printf("아무런 정보도 입력되지 않았습니다 .\n");
 			}
-		}
+		}else if(choice == 6){
+			if(count > 0)
+				searchName(slist, curcount);
+			else
+				printf("아무런 정보도 입력되지 않았습니다.\n");
+		}else if(choice == 7){
+			if(count > 0)
+				searchAvg(slist, curcount);
+			else
+				printf("아무런 정보도 입력되지 않았습니다.\n");
+		}		
 	}
 	printf("==>종료됨!\n");
 	return 0;

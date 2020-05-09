@@ -82,3 +82,21 @@ void searchName(Score *s, int count){
 		printf("==> \"%s\" 는 없습니다.\n", searchName);
 	}
 }
+
+void searchAvg(Score* s, int count){
+	int avgCount = 0;
+	float searchAvg ;
+	printf("검색할 평균 점수(입력 점수 이상인 평균 출력!): ");
+	scanf("%f", &searchAvg);
+	
+	printf("\n== = = [검색한 평균] = = ==\n");
+	for(int i=0;i<count;i++){
+		if(s[i].kor == -1 && s[i].math == -1 && s[i].eng == -1) continue;
+		if(s[i].avg >= searchAvg){
+			readScore(s[i]);
+			avgCount++;
+		}
+	}
+	if(avgCount == 0)
+		printf("==> %.1f 이상의 평균점수를 가진 학생은 없습니다.\n", searchAvg);
+}

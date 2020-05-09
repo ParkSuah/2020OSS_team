@@ -26,6 +26,9 @@ int scoreMenu(){
     printf("3. 수정\n");
     printf("4. 삭제\n");
     printf("5. 파일저장\n");
+    printf("6. 이름검색\n");
+    printf("7. 평균검색\n");
+    printf("8. 등수정렬\n");
     printf("0. 종료\n");
     printf("원하는 메뉴는 ? ");
     scanf("%d", &num);
@@ -59,4 +62,23 @@ int loadData(Score* s){
 
 	printf("로딩 성공 !\n");
 	return c;
+}
+
+void searchName(Score *s, int count){
+	int nameCount = 0;
+	char searchName[20];
+	printf("검색할 이름: ");
+	scanf("%s", searchName);
+	
+	printf("\n== = = [검색한 이름] = = ==\n");
+	for(int i = 0; i < count; i++){
+		if(s[i].kor == -1 && s[i].math == -1 && s[i].eng)continue;
+		if(strstr(s[i].name, searchName)){
+			readScore(s[i]);
+			nameCount++;
+		}
+	}
+	if(nameCount == 0){
+		printf("==> \"%s\" 는 없습니다.\n", searchName);
+	}
 }

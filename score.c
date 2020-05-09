@@ -10,6 +10,10 @@ int addScore(Score *s){
 	printf("영어점수: ");
 	scanf("%d", &s->eng);
 	printf("==> 추가됨!\n");
+
+	s->sum = s->kor+s->math+s->eng;
+	s->avg = s->sum/3.0;
+
 	return 1;
 }
 
@@ -30,6 +34,9 @@ int updateScore(Score *s){
 	printf("영어점수: ");
 	scanf("%d", &s->eng);
 	printf("==> 수정됨!\n");
+
+	s->sum = s->kor+s->math+s->eng;
+	s->avg = s->sum/3.0;
 	
 	return 1;
 }

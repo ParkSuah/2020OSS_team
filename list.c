@@ -60,3 +60,22 @@ int loadData(Score* s){
 	printf("로딩 성공 !\n");
 	return c;
 }
+
+void searchName(Score *s, int count){
+	int nameCount = 0;
+	char searchName[20];
+	printf("검색할 이름: ");
+	scanf("%s", searchName);
+	
+	printf("\n== = = [검색한 이름] = = ==\n");
+	for(int i = 0; i < count; i++){
+		if(s[i].kor == -1 && s[i].math == -1 && s[i].eng)continue;
+		if(strstr(s[i].name, searchName)){
+			readScore(s[i]);
+			nameCount++;
+		}
+	}
+	if(nameCount == 0){
+		printf("==> \"%s\" 는 없습니다.\n", searchName);
+	}
+}

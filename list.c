@@ -20,7 +20,7 @@ int selectDataNo(Score *s, int count){
 
 int scoreMenu(){
     int num;
-    printf("====메뉴목록====\n");
+    printf("\n====메뉴목록====\n");
     printf("1. 조회\n");
     printf("2. 추가\n");
     printf("3. 수정\n");

@@ -1,5 +1,36 @@
 #include "score.h"
 
+/*
+void rankScore(Score* s, int count){
+	for(int i=0; i<count; i++)
+		s[i].rank = 1;
+	//Score rank[count];
+	for(int i=0; i<count; i++){
+		for(int j=0; j<count; j++){
+			if(s[i].kor == -1) s[i].rank == -1;
+			if(s[i].sum < s[j].sum){
+				printf("ranking...\n");
+				s[i].rank++;
+				printf("%s 의 등수 : %d\n", s[i].name, s[i].rank);
+			}
+		}
+	}
+}
+*/
+
+void rankScore(Score *s, int count){
+	int cnt;
+	for(int i = 0; i < count; i++){
+		cnt = 0;
+		for(int j = 0; j < count; j ++){
+			if(s[i].sum > s[j].sum){
+				cnt++;
+			}
+		}
+		s[i].rank = cnt + 1;
+	}
+}
+
 char getGrade(float avg){
 	char g;
 	if(avg>=90 && avg <=100) g = 'A';

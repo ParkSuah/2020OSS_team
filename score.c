@@ -32,7 +32,9 @@ void readScore(Score s){
 	if(s.kor == -1 && s.math == -1 && s.eng == -1) return;
 	s.sum = s.kor + s.math + s.eng;
 	s.avg = s.sum/3.0;
-	printf("%s    %d     %d     %d     %d     %.1f\n", s.name, s.kor, s.eng, s.math, s.sum, s.avg);
+	char r = getGrade(s.avg);
+	printf("%-5s    %-2d     %-2d     %-2d     %-2d     %3.1f    %-2d    %-2c\n", 
+		s.name, s.kor, s.eng, s.math, s.sum, s.avg, s.rank, r);
 }
 
 int updateScore(Score *s){

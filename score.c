@@ -1,5 +1,16 @@
 #include "score.h"
 
+char getGrade(float avg){
+	char g;
+	if(avg>=90 && avg <=100) g = 'A';
+	else if(avg>80) g = 'B';
+	else if(avg>70) g = 'C';
+	else if(avg>60) g = 'D';
+	else g = 'F';
+
+	return g;
+}
+
 int addScore(Score *s){
 	printf("학생의 이름: ");
 	scanf("%s", s->name);

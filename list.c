@@ -1,7 +1,7 @@
 #include "list.h"
 
 void listScore(Score *s, int count){
-	printf("\n등록번호   이름    국어    영어    수학    총점    평균\n");
+	printf("\n등록번호   이름    국어    영어    수학    총점    평균    등수\n");
 	for(int i = 0; i < count; i++){
 		if(s[i].kor == -1 && s[i].eng == -1 && s[i].math == -1) continue;
 		printf("%d          ", i + 1);
@@ -54,7 +54,8 @@ int loadData(Score* s){
 		return 0;
 	}
 	for(;;c++){
-		fscanf(fp, "%d %d %d %d %f ", &s[c].kor, &s[c].eng, &s[c].math,&s[c].sum, &s[c].avg);
+		fscanf(fp, "%d %d %d %d %f ", &s[c].kor, &s[c].eng, 
+				&s[c].math,&s[c].sum, &s[c].avg);
 		fgets(s[c].name, 20, fp);
 		s[c].name[strlen(s[c].name)-1] = '\0';
 		if(feof(fp)) break;
@@ -73,7 +74,7 @@ void searchName(Score *s, int count){
 	printf("\n== = = [검색한 이름] = = ==\n");
 	printf("\n이름    국어    영어    수학    총점    평균\n");
 	for(int i = 0; i < count; i++){
-		if(s[i].kor == -1 && s[i].math == -1 && s[i].eng)continue;
+		if(s[i].kor == -1 && s[i].math == -1 && s[i].eng == -1)continue;
 		if(strstr(s[i].name, searchName)){
 			readScore(s[i]);
 			nameCount++;
@@ -101,4 +102,29 @@ void searchAvg(Score* s, int count){
 	}
 	if(avgCount == 0)
 		printf("==> %.1f 이상의 평균점수를 가진 학생은 없습니다.\n", searchAvg);
+}
+
+void searchRank(Score* s, int count){
+		int searchRank;
+		printf("검색할 등수: ");
+		scanf("%d", &searchRank);
+		int c = 0;
+		/*
+		while(c < count){
+			for(int i=0; i<count; i++){
+				if(i+1 == s[i].rank)
+					readScore(s[i]);
+			}
+			c++;
+		}
+		*/
+		if(searchRank > count){
+			printf("학생 수는 %d명입니다.\n", count);
+		}else{
+			printf("\n== = = [%d 등 학생의 점수] = = ==\n", searchRank);
+			for(int i=0; i<count; i++){
+				if(s[i].rank == searchRank)
+					readScore(s[i]);
+			}
+	}
 }

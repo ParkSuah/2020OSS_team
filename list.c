@@ -73,7 +73,7 @@ void searchName(Score *s, int count){
 	
 	printf("\n== = = [검색한 이름] = = ==\n");
 	for(int i = 0; i < count; i++){
-		if(s[i].kor == -1 && s[i].math == -1 && s[i].eng)continue;
+		if(s[i].kor == -1 && s[i].math == -1 && s[i].eng == -1)continue;
 		if(strstr(s[i].name, searchName)){
 			readScore(s[i]);
 			nameCount++;

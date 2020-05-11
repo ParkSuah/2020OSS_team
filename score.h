@@ -7,6 +7,7 @@ typedef struct _score{
 	char name[20];
 	float avg;
 	int sum;
+	int rank;
 }Score;
 
 void readScore(Score s); //하나의 데이터를 읽는 함수

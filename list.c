@@ -13,7 +13,7 @@ void listScore(Score *s, int count){
 int selectDataNo(Score *s, int count){
 	int num;
 	listScore(s, count);
-	printf("작업할 제품번호(취소: 0): ");
+	printf("수정할 정보(취소: 0): ");
 	scanf("%d", &num);
 	return num;
 }
@@ -72,6 +72,7 @@ void searchName(Score *s, int count){
 	scanf("%s", searchName);
 	
 	printf("\n== = = [검색한 이름] = = ==\n");
+	printf("\n이름    국어    영어    수학    총점    평균\n");
 	for(int i = 0; i < count; i++){
 		if(s[i].kor == -1 && s[i].math == -1 && s[i].eng == -1)continue;
 		if(strstr(s[i].name, searchName)){
@@ -91,6 +92,7 @@ void searchAvg(Score* s, int count){
 	scanf("%f", &searchAvg);
 	
 	printf("\n== = = [검색한 평균] = = ==\n");
+	printf("\n이름    국어    영어    수학    총점    평균\n");
 	for(int i=0;i<count;i++){
 		if(s[i].kor == -1 && s[i].math == -1 && s[i].eng == -1) continue;
 		if(s[i].avg >= searchAvg){

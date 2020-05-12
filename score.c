@@ -1,5 +1,9 @@
 #include "score.h"
 
+<<<<<<< HEAD
+/*
+=======
+>>>>>>> 191be55bee90909e546d882a39ab5693f668fbbe
 void rankScore(Score* s, int count){
 	for(int i=0; i<count; i++)
 		s[i].rank = 1;
@@ -15,8 +19,38 @@ void rankScore(Score* s, int count){
 		}
 	}
 }
+<<<<<<< HEAD
+*/
+
+void rankScore(Score *s, int count){
+	int cnt;
+	for(int i = 0; i < count; i++){
+		cnt = 0;
+		for(int j = 0; j < count; j ++){
+			if(s[i].sum > s[j].sum){
+				cnt++;
+			}
+		}
+		s[i].rank = cnt + 1;
+	}
+}
+
+char getGrade(float avg){
+	char g;
+	if(avg>=90 && avg <=100) g = 'A';
+	else if(avg>80) g = 'B';
+	else if(avg>70) g = 'C';
+	else if(avg>60) g = 'D';
+	else g = 'F';
+
+	return g;
+}
+
+int addScore(Score *s){
+=======
 
 int addScore(Score *s, int count){
+>>>>>>> 191be55bee90909e546d882a39ab5693f668fbbe
 	printf("학생의 이름: ");
 	scanf("%s", s->name);
 	printf("국어점수: ");
@@ -37,8 +71,14 @@ void readScore(Score s){
 	if(s.kor == -1 && s.math == -1 && s.eng == -1) return;
 	s.sum = s.kor + s.math + s.eng;
 	s.avg = s.sum/3.0;
+<<<<<<< HEAD
+	char r = getGrade(s.avg);
+	printf("%-5s    %-2d     %-2d     %-2d     %-2d     %3.1f    %-2d    %-2c\n", 
+		s.name, s.kor, s.eng, s.math, s.sum, s.avg, s.rank, r);
+=======
 	printf("%s    %d     %d     %d     %d     %.1f    %d\n", 
 		s.name, s.kor, s.eng, s.math, s.sum, s.avg, s.rank);
+>>>>>>> 191be55bee90909e546d882a39ab5693f668fbbe
 }
 
 int updateScore(Score *s, int count){

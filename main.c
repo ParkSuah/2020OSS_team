@@ -41,7 +41,7 @@ int main(void){
 					printf("==> 삭제가 취소됩니다.\n");
 					continue;
 				}
-				printf("데이터를 삭제합니다. (삭제:1)");
+				printf("정말 삭제하시겠습니까? (예:1) : ");
 				scanf("%d", &deletok);
 				if(deletok == 1){
 					deleteScore(&slist[select - 1]);

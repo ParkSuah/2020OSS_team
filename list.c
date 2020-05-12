@@ -1,7 +1,7 @@
 #include "list.h"
 
 void listScore(Score *s, int count){
-	printf("\n등록번호   이름    국어    영어    수학    총점    평균    등수\n");
+	printf("\n등록번호   이름    국어    영어    수학    총점    평균    등수   등급\n");
 	for(int i = 0; i < count; i++){
 		if(s[i].kor == -1 && s[i].eng == -1 && s[i].math == -1) continue;
 		printf("%d          ", i + 1);

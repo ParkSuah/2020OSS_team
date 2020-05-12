@@ -28,7 +28,7 @@ int scoreMenu(){
     printf("5. 파일저장\n");
     printf("6. 이름검색\n");
     printf("7. 평균검색\n");
-    printf("8. 등수정렬\n");
+    printf("8. 등수검색\n");
     printf("0. 종료\n");
     printf("원하는 메뉴는 ? ");
     scanf("%d", &num);

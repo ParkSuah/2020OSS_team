@@ -21,11 +21,14 @@ void rankScore(Score* s, int count){
 
 void rankScore(Score *s, int count){
 	int cnt;
+	int max = 0;
 	for(int i = 0; i < count; i++){
 		cnt = 0;
 		for(int j = 0; j < count; j ++){
 			if(s[i].sum < s[j].sum){
 				cnt++;
+			}else{
+				continue;
 			}
 		}
 		s[i].rank = cnt + 1;

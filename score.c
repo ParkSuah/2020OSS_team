@@ -24,7 +24,7 @@ void rankScore(Score *s, int count){
 	for(int i = 0; i < count; i++){
 		cnt = 0;
 		for(int j = 0; j < count; j ++){
-			if(s[i].sum > s[j].sum){
+			if(s[i].sum < s[j].sum){
 				cnt++;
 			}
 		}

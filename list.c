@@ -60,7 +60,7 @@ int loadData(Score* s){
 		s[c].name[strlen(s[c].name)-1] = '\0';
 		if(feof(fp)) break;
 	}
-
+	rankScore(s, c);
 	printf("로딩 성공 !\n");
 	return c;
 }

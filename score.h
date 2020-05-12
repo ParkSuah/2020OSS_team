@@ -19,3 +19,5 @@ int updateScore(Score *s, int count); //기존 등록된 식당을 수정하는 
 int deleteScore(Score *s); //등록된 식당을 제거하는 함수
 
 void rankScore(Score* s, int count); // 학생들의 등수 매기기
+
+void listByScore(Score* s, int count); // 등수에 따라 나열

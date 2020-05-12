@@ -18,6 +18,14 @@ void rankScore(Score* s, int count){
 	}
 }
 */
+void listByScore(Score* s, int count){
+	for(int i=0; i<count; i++){
+		for(int j=0; j<count; j++){
+			if(s[j].rank == i+1)
+				readScore(s[j]);
+		}
+	}
+}
 
 void rankScore(Score *s, int count){
 	int cnt;
@@ -60,6 +68,7 @@ int addScore(Score *s, int count){
 	s->sum = s->kor+s->math+s->eng;
 	s->avg = s->sum/3.0;
 	rankScore(s, count);
+printf("방금 입력한 학생의 등수 %d \n", s[count-1].rank);
 	return 1;
 }
 

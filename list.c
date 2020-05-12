@@ -105,26 +105,26 @@ void searchAvg(Score* s, int count){
 }
 
 void searchRank(Score* s, int count){
-		int searchRank;
-		printf("검색할 등수: ");
-		scanf("%d", &searchRank);
-		int c = 0;
-		/*
-		while(c < count){
-			for(int i=0; i<count; i++){
-				if(i+1 == s[i].rank)
-					readScore(s[i]);
-			}
-			c++;
+	int searchRank;
+	printf("검색할 등수: ");
+	scanf("%d", &searchRank);
+	int c = 0;
+	/*
+	while(c < count){
+		for(int i=0; i<count; i++){
+			if(i+1 == s[i].rank)
+				readScore(s[i]);
 		}
-		*/
-		if(searchRank > count){
-			printf("학생 수는 %d명입니다.\n", count);
-		}else{
-			printf("\n== = = [%d 등 학생의 점수] = = ==\n", searchRank);
-			for(int i=0; i<count; i++){
-				if(s[i].rank == searchRank)
-					readScore(s[i]);
-			}
+		c++;
+	}
+	*/
+	if(searchRank > count){
+		printf("학생 수는 %d명입니다.\n", count);
+	}else{
+		printf("\n== = = [%d 등 학생의 점수] = = ==\n", searchRank);
+		for(int i=0; i<count; i++){
+			if(s[i].rank == searchRank)
+				readScore(s[i]);
+		}
 	}
 }

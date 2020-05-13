@@ -19,7 +19,7 @@ int main(void){
 			}
 		}
 		else if(choice == 2){
-			count += addScore(&slist[curcount++], curcount);
+			count += addScore(&slist[curcount++]);
 		}
 		else if(choice == 3){
 			if(count > 0){
@@ -28,7 +28,7 @@ int main(void){
 					printf("==> 수정이 취소됩니다.\n");
 					continue;
 				}
-				updateScore(&slist[select -1], curcount);	
+				updateScore(&slist[select -1]);	
 			}else{
 				printf("아무런 정보도 입력되지 않았습니다.\n");
 			}

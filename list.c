@@ -74,7 +74,7 @@ void searchName(Score *s, int count){
 					scanf("%s", searchName);
 						
 						printf("\n========================== [검색한 이름] ===========================||\n");
-							printf("이름       국어    영어    수학    총점     평균     등수     성적\n");
+							printf("이름       국어    영어    수학    총점     평균      등수     성적\n");
 								printf("===================================================================||\n");
 									for(int i = 0; i < count; i++){
 												if(s[i].kor == -1 && s[i].math == -1 && s[i].eng == -1)continue;
@@ -95,7 +95,7 @@ void searchAvg(Score* s, int count){
 					scanf("%f", &searchAvg);
 						
 						printf("\n========================== [검색한 평균] ===========================||\n");
-							printf("이름       국어    영어    수학    총점     평균    등수     성적\n");
+							printf("이름       국어    영어    수학    총점     평균     등수     성적\n");
 								printf("===================================================================||\n");
 									for(int i=0;i<count;i++){
 												if(s[i].kor == -1 && s[i].math == -1 && s[i].eng == -1) continue;
@@ -113,20 +113,11 @@ void searchRank(Score* s, int count){
 					printf("검색할 등수: ");
 							scanf("%d", &searchRank);
 									int c = 0;
-											/*
-												 		while(c < count){
-																	for(int i=0; i<count; i++){
-																					if(i+1 == s[i].rank)
-																										readScore(s[i]);
-																													}
-																																c++;
-																																		}
-																																				*/
 											if(searchRank > count){
 															printf("==>%d등까지 있습니다.\n", count);
 																	}else{
 																					printf("\n========================== [검색한 등수] ===========================||\n");
-																								printf("이름       국어    영어    수학    총점     평균    등수     성적\n");
+																								printf("이름       국어    영어    수학    총점     평균     등수     성적\n");
 																									printf("===================================================================||\n");
 																												for(int i=0; i<count; i++){
 																																	if(s[i].rank == searchRank)

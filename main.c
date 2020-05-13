@@ -28,7 +28,7 @@ int main(void){
 					printf("==> 수정이 취소됩니다.\n");
 					continue;
 				}
-				updateScore(&slist[select -1);	
+				updateScore(&slist[select -1]);	
 			}else{
 				printf("아무런 정보도 입력되지 않았습니다.\n");
 			}

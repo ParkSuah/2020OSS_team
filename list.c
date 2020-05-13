@@ -1,12 +1,10 @@
 #include "list.h"
 
 void listScore(Score *s, int count){
-<<<<<<< HEAD
 	printf("\n등수       이름      국어    영어    수학    총점     평균      성적\n");
 	printf("======================================================================||\n");
 =======
 	printf("\n등록번호   이름    국어    영어    수학    총점    평균    등수   등급\n");
->>>>>>> 94b3e797a5fca562bd6f3610c57014aea7ea6555
 	for(int i = 0; i < count; i++){
 		if(s[i].kor == -1 && s[i].eng == -1 && s[i].math == -1) continue;
 		rankScore(s, count);

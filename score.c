@@ -65,7 +65,6 @@ int addScore(Score *s){
 
 	s->sum = s->kor+s->math+s->eng;
 	s->avg = s->sum/3.0;
-	printf("방금 입력한 학생의 등수 %d \n", s[count-1].rank);
 	return 1;
 }
 

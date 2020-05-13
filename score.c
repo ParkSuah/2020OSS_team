@@ -1,8 +1,4 @@
 #include "score.h"
-<<<<<<< HEAD
-=======
-
-
 /*
 void rankScore(Score* s, int count){
 	for(int i=0; i<count; i++)
@@ -109,4 +105,3 @@ int deleteScore(Score *s){
 	printf("==> 삭제됨!\n");
 	return 1;
 }
->>>>>>> 94b3e797a5fca562bd6f3610c57014aea7ea6555

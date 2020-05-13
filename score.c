@@ -65,8 +65,7 @@ int addScore(Score *s){
 
 	s->sum = s->kor+s->math+s->eng;
 	s->avg = s->sum/3.0;
-	rankScore(s, count);
-printf("방금 입력한 학생의 등수 %d \n", s[count-1].rank);
+	printf("방금 입력한 학생의 등수 %d \n", s[count-1].rank);
 	return 1;
 }
 
@@ -93,7 +92,6 @@ int updateScore(Score *s){
 
 	s->sum = s->kor+s->math+s->eng;
 	s->avg = s->sum/3.0;
-	rankScore(s, count);
 	return 1;
 }
 

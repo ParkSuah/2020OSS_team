@@ -1,10 +1,10 @@
+### 1. 데이터 조회
+![1](https://user-images.githubusercontent.com/48156241/81923110-1ee61c80-9618-11ea-8878-392eea4c7ba0.png)
+---------------------------------
 ### 2. 데이터 추가
 ![2-1](https://user-images.githubusercontent.com/48156241/81923112-1ee61c80-9618-11ea-92c6-95a203f0bcf2.png)
 ![2-2](https://user-images.githubusercontent.com/48156241/81923113-1f7eb300-9618-11ea-8d00-11535286196b.png)
 --------------------------------
-### 1. 데이터 조회
-![1](https://user-images.githubusercontent.com/48156241/81923110-1ee61c80-9618-11ea-8878-392eea4c7ba0.png)
----------------------------------
 ### 3. 데이터 수정
 ![3](https://user-images.githubusercontent.com/48156241/81923115-20174980-9618-11ea-9a9b-be53387b87cb.png)
 ----------------------------------

@@ -31,6 +31,8 @@ int scoreMenu(){
 	printf("6. 이름검색\n");
 	printf("7. 평균검색\n");
 	printf("8. 등수검색\n");
+	printf("9. 등수로 나열\n");
+	printf("10. 모든 데이터 한번에 삭제\n");
 	printf("0. 종료\n");
 	printf("원하는 메뉴는 ? ");
 	scanf("%d", &num);

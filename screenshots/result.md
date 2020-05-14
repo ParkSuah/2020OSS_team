@@ -1,4 +1,4 @@
-![10](https://user-images.githubusercontent.com/48156241/81923108-1db4ef80-9618-11ea-9fc7-09ec095c6ef8.png)
+![10](https://user-images.githubusercontent.com/48156241/81923108-1db4ef80-9618-11ea-9fc7-09ec095c6ef8.png){: width="300" height="300"}
 ![1](https://user-images.githubusercontent.com/48156241/81923110-1ee61c80-9618-11ea-8878-392eea4c7ba0.png)
 ![2-1](https://user-images.githubusercontent.com/48156241/81923112-1ee61c80-9618-11ea-92c6-95a203f0bcf2.png)
 ![2-2](https://user-images.githubusercontent.com/48156241/81923113-1f7eb300-9618-11ea-8d00-11535286196b.png)

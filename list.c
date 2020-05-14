@@ -15,7 +15,7 @@ void listScore(Score *s, int count){
 int selectDataNo(Score *s, int count){
 	int num;
 	listScore(s, count);
-	printf("수정할 정보(취소: 0): ");
+	printf("수정 또는 삭제할 정보(취소: 0): ");
 	scanf("%d", &num);
 	return num;
 }
@@ -32,7 +32,7 @@ int scoreMenu(){
 	printf("7. 평균검색\n");
 	printf("8. 등수검색\n");
 	printf("9. 등수로 나열\n");
-	printf("10. 모든 데이터 한번에 삭제\n");
+	printf("10. 모든 데이터 삭제\n");
 	printf("0. 종료\n");
 	printf("원하는 메뉴는 ? ");
 	scanf("%d", &num);

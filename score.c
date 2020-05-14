@@ -79,12 +79,20 @@ int deleteScore(Score *s){
 	s->math = -1;
 	s->eng = -1;
 	s->rank = -1;
-	printf("==> 삭제됨!\n");
+	//printf("==> 삭제됨!\n");
 	return 1;
 }
 
 int deleteAllScore(Score* s, int count){
-	for(int i=0; i<count; i++){
-		deleteScore(&s[i]);
+	int deleteOK;
+	printf("정말 모든 데이터를 삭제하시겠습니까(네 : 1)? ");
+	scanf("%d", &deleteOK);
+	if(deleteOK == 1){
+		for(int i=0; i<count; i++){
+			deleteScore(&s[i]);
+		}
+		printf("모든 데이터가 삭제되었습니다.\n");
+	}else{
+		printf("==> 취소됨 !\n");
 	}
 }

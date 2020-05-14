@@ -45,6 +45,7 @@ int main(void){
 				scanf("%d", &deletok);
 				if(deletok == 1){
 					deleteScore(&slist[select - 1]);
+					printf("==> 삭제됨!\n");
 					count--;
 				}
 				else printf("==> 제품삭제 취소");

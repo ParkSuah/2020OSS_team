@@ -13,6 +13,10 @@
 ----------------------------------
 ##### 5. 파일로 저장
 ![5](https://user-images.githubusercontent.com/48156241/81923118-20afe000-9618-11ea-82d6-1ad9800dfc85.png)
+
+##### 저장된 파일 data.txt
+![5-1 data txt](https://user-images.githubusercontent.com/48156241/81923953-6620dd00-9619-11ea-8850-026fa18aaa70.png)
+
 ##### 파일 로딩
 ![5-2fileLoad](https://user-images.githubusercontent.com/48156241/81923119-21487680-9618-11ea-9750-75c93c9631bf.png)
 -----------------------------------

@@ -77,7 +77,12 @@ int main(void){
 				listByScore(slist, curcount);
 			else
 				printf("아무런 정보도 입력되지 않았습니다.\n");
-			}	
+		}else if(choice == 10){
+			if(count > 0)
+				deleteAllScore(slist, curcount);
+			else
+				printf("아무런 정보도 입력되지 않았습니다.\n");
+		}			
 	}
 	printf("==>종료됨!\n");
 	return 0;

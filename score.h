@@ -21,3 +21,4 @@ int deleteScore(Score *s); //등록된 식당을 제거하는 함수
 void rankScore(Score *s, int count); //등수매기기
 void rankScore(Score* s, int count); // 학생들의 등수 매기기
 void listByScore(Score* s, int count); // 등수에 따라 나열
+int deleteAllScore(Score* s, int count); //모든 데이터를 한번에 삭제

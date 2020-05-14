@@ -82,3 +82,9 @@ int deleteScore(Score *s){
 	printf("==> 삭제됨!\n");
 	return 1;
 }
+
+int deleteAllScore(Score* s, int count){
+	for(int i=0; i<count; i++){
+		deleteScore(&s[i]);
+	}
+}
